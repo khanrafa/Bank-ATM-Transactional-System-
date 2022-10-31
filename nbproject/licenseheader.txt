@@ -1,0 +1,7 @@
+-Creator: Rafae Khan
+
+-Language Used: Java + JavaFX
+
+-Program Name: Bank Transactional System Mockup
+
+-Program Description: This program demonstrates am ATM mockup with a full transactional system. UI was created using JavaFX

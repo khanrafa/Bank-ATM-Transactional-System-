@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.*?>                                            
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bank.AccountController" prefHeight="600.0" prefWidth="600.0">    
+    <top>
+        <VBox alignment="CENTER">
+            <Label text="ABC Bank System"  />
+            <Label text="*****************************************************" />
+            
+        </VBox>
+    </top> 
+    <right>
+        <VBox prefHeight="100.0" prefWidth="250.0">
+            <Label text="Select Service Type:" />
+            <ListView fx:id="lstService" prefHeight="100.0" prefWidth="250.0"/>
+            <Label text=" " />
+            <Label text="Amount:" />
+            <Label text=" " />
+            <TextField fx:id="txt1" text="0.0" prefWidth="250.0"/>
+            <Label text=" " />
+            <Label text="Balance:" />
+            <Label text=" " />
+            <TextField fx:id="txt2" text="0.0" prefWidth="250.0"/>
+            <Label text=" " />
+            <Label text="Interest Rate:" />
+            <Label text=" " />
+            <TextField fx:id="txt3" text="0.0" prefWidth="250.0"/>  
+            <Label text=" " />
+            <Button fx:id="btn1" text="Update" prefWidth="250.0"/>            
+            <Button fx:id="btn2" text="Exit" onAction="#exit" prefWidth="250.0"/>                 
+            <Button fx:id="btn3" text="Save Transaction" onAction="#save" prefWidth="250.0"/>            
+        </VBox>
+    </right>  
+    <left>
+        <VBox prefHeight="100.0" prefWidth="250.0">
+            <Label text="Select the Account:" />
+            <ComboBox fx:id="accountType" prefWidth="200.0" visibleRowCount="3" />
+        </VBox>
+    </left>
+    <center >
+        <Label text=" " />
+    </center> 
+    <bottom>
+        <VBox prefHeight="100.0" alignment="CENTER">
+            <Label text=" " />
+            <Label text=" " />
+            <Label text="Your Information" alignment="CENTER" />
+            <Label text="******************************************" />
+            <Label text="" />
+            <Label text="Account:"/>
+            <Label fx:id="accResult" text="" />
+            <Label text="Service Type:"/>
+            <Label fx:id="serResult" text="" />
+            <Label text="" />     
+        </VBox>
+    </bottom>    
+</BorderPane>
